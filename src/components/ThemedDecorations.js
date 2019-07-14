@@ -1,7 +1,7 @@
 // Code ThemedDecoration Component Here
 import React from 'react';
 
-export default class ThemedDecorations extends React.Component {
+export default class ThemedParty extends React.Component {
   render() {
     const childrenWithExtraProp = React.Children.map(this.props.children, child => {
       return React.cloneElement(child, {
@@ -9,7 +9,7 @@ export default class ThemedDecorations extends React.Component {
       });
     });
     return (
-      <div className="themed-decorations">
+      <div className="themed-party">
         {childrenWithExtraProp}
       </div>
     );
