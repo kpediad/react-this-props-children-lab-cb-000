@@ -9,7 +9,7 @@ export default class ThemedParty extends React.Component {
       });
     });
     return (
-      <div className="themed-party">
+      <div>
         {childrenWithExtraProp}
       </div>
     );
