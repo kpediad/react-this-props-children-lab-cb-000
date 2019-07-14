@@ -5,7 +5,7 @@ export default class ThemedParty extends React.Component {
   render() {
     const childrenWithExtraProp = React.Children.map(this.props.children, child => {
       return React.cloneElement(child, {
-        className:
+        className: child.props.theme
       });
     });
     return (
